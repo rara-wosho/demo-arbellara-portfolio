@@ -30,6 +30,15 @@
 body {
   background: rgb(247, 248, 255) !important;
 }
+
+#demo-tag{
+    position: fixed;
+    top: 6.8rem;
+    left: 1rem;
+    background: rgba(255,255,255,0.7);
+    font-size: 1.5rem;
+    z-index: 9999;
+}
 a {
   text-decoration: none;
 }
