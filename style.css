@@ -789,7 +789,15 @@ section {
   background-color: rgba(209, 209, 209, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
-
+.txt-maisn{
+  position: fixed !important;
+  top:6.5rem;
+  font-size: 1.4rem;
+  left: 1rem;
+  z-index: 9895;
+  text-transform: uppercase;
+  background: rgba(255,255,255,.6);
+}
 .skill-sets .skill-item span.yrs {
   position: absolute;
   top: 5%;
@@ -800,7 +808,6 @@ section {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
-
 .skill-sets .skill-item p {
   letter-spacing: 2px;
   font-size: 1.5rem;
@@ -1081,15 +1088,12 @@ section {
 .bg-secondary-transparent {
   background: var(--bg-secondary-transparent);
 }
-
 .bg-transparentt {
   background: var(--bg-transparent) !important;
 }
-
 .txt-main {
   color: var(--txt-primary) !important;
 }
-
 .txt-main-light {
   color: var(--txt-primary-light) !important;
 }
@@ -1097,7 +1101,6 @@ section {
   padding-left: 1rem;
   border-left: 3px solid var(--bg-accent);
 }
-
 .btn-main {
   white-space: nowrap;
   display: inline-block;

@@ -16,7 +16,6 @@
   </head>
 
   <body>
-    <div id="demo-tag" class="px-3">DEMO VERSION</div>
     <!-- Header -->
     <section id="header" class="container-fluid">
       <div class="header container">
@@ -82,7 +81,7 @@
                 class="col d-flex align-items-center justify-content-center ps-0 ps-lg-4 pt-2"
               >
                 <div class="socials d-flex">
-                  <a class="social-icon" >
+                  <a class="social-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -101,9 +100,7 @@
                     </svg>
                   </a>
 
-                  <a
-                    class="social-icon"
-                  >
+                  <a class="social-icon">
                     <svg
                       width="27"
                       height="27"
@@ -1004,12 +1001,6 @@
                 </div>
                 <div class="right-pdf">
                   <p class="mb-0">Ignite Institute 3 19 - Flooring Takeoffs</p>
-                  <!-- <button
-                    class="btn btn-primary btn-view"
-                    onclick="window.open('Planswift/Ignite Institute 3 19 - Flooring Takeoffs.pdf')"
-                  >
-                    View PDF
-                  </button> -->
                 </div>
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -1030,16 +1021,9 @@
                 </div>
                 <div class="right-pdf">
                   <p class="mb-0">KSU Combs Hall 4 4 Flooring Takeoff</p>
-                  <!-- <button
-                    class="btn btn-primary btn-view"
-                    onclick="window.open('Planswift/KSU Combs Hall 4 4 Flooring Takeoff.pdf')"
-                  >
-                    View PDF
-                  </button> -->
                 </div>
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
                   d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
                 />
@@ -1260,6 +1244,8 @@
         }
 
         observeAnimation();
+        let windowWidthh = $('<div class="py-1 txt-maisn px-3"></div>');
+        $("body").append(windowWidthh);
 
         $("#download-cv").click(function (event) {
           event.preventDefault();
@@ -1275,7 +1261,7 @@
 
         const sections = $("section");
         const navLinks = $("ul.mb-0 li a");
-
+        windowWidthh.append("D");
         function setActiveLink() {
           let scrollTop = $(window).scrollTop();
           let windowHeight = $(window).height();
@@ -1296,9 +1282,8 @@
             }
           });
         }
-
+        windowWidthh.append("E");
         setActiveLink();
-
         $(window).on("scroll", function () {
           setActiveLink(); // Call on scroll
         });
